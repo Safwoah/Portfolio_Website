@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
       <div className="z-10 max-w-3xl animate-fade-in-up">
         <div className="mb-6 inline-block p-1 rounded-full bg-gradient-to-tr from-teal-400 to-blue-600">
            <img 
-            src="https://picsum.photos/150/150" 
-            alt="Profile Placeholder" 
+            src={`https://ui-avatars.com/api/?name=${encodeURIComponent(PERSONAL_INFO.name)}&background=0f172a&color=2dd4bf&size=256`}
+            alt={PERSONAL_INFO.name}
             className="w-32 h-32 rounded-full border-4 border-slate-900 object-cover"
           />
         </div>
